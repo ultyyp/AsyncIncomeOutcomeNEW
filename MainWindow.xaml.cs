@@ -28,6 +28,11 @@ namespace AsyncIncomeOutcome
             InitializeComponent();
         }
 
+/*
+Task.Delay(1000).Wait() - Synced, Blocking
+await Task.Delay(1000) - Synced, Not Blocking
+Task.Delay(1000) - Asynced, Not Blocking
+*/
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             decimal income = 0m, outcome = 0m, total = 0m;
